@@ -41,18 +41,18 @@
 <body>
 <div class="wrap">
   <h1>SnagRX — Patient Support Performance</h1>
-  <div class="sub">Jul 15–21, 2026 · Voice · Email · Chat · SnagRX · Central Time · <b>page rebuilt 5:21am CDT</b></div>
+  <div class="sub">Jul 15–21, 2026 · Voice · Email · Chat · SnagRX · Central Time · <b>page rebuilt 9:20am CDT</b></div>
 
   <div class="sec" style="border-color:var(--amb);">Today so far · Wed Jul 22 <span style="font-weight:400;color:var(--amb);font-size:13px;">— in progress</span></div>
   <div class="note" style="margin:-8px 0 12px;">Preliminary — feeds refresh at different rates, so each tile shows its own "as of" time.</div>
   <div class="grid kpis">
-    <div class="card"><div class="k">Voice — calls</div><div class="v">0</div><div class="n">as of Tue 7/21, ~4a CT</div></div>
-    <div class="card"><div class="k">Email — received</div><div class="v">0</div><div class="n">as of Tue 7/21, ~1:30p ET</div></div>
-    <div class="card"><div class="k">Email — open backlog</div><div class="v">0</div><div class="n">as of Tue 7/21, ~1:30p ET</div></div>
-    <div class="card"><div class="k">Chat — chats</div><div class="v">0</div><div class="n">as of Tue 7/21, ~4a CT</div></div>
+    <div class="card"><div class="k">Voice — calls</div><div class="v">0</div><div class="n">as of ~3a CT</div></div>
+    <div class="card"><div class="k">Email — received</div><div class="v">1</div><div class="n">as of ~2:30a ET</div></div>
+    <div class="card"><div class="k">Email — open backlog</div><div class="v">0</div><div class="n">as of ~2:30a ET</div></div>
+    <div class="card"><div class="k">Chat — chats</div><div class="v">0</div><div class="n">as of ~3a CT</div></div>
   </div>
 
-  <div class="sec">Voice <span style="font-weight:400;color:var(--mut);font-size:12px;">· updated through Tue 7/21, ~4a CT</span></div>
+  <div class="sec">Voice <span style="font-weight:400;color:var(--mut);font-size:12px;">· updated through ~3a CT</span></div>
   <div class="grid kpis">
     <div class="card"><div class="k">Answered ≤30s</div><div class="v red">50%</div><div class="n red">Target 80%</div></div>
     <div class="card"><div class="k">Abandonment</div><div class="v red">17%</div><div class="n red">Target &lt;5%</div></div>
@@ -75,14 +75,14 @@
     <div><div class="lbl" style="margin-top:0;">Inbound Volume by Day</div><div class="cbox"><canvas id="c1"></canvas></div></div>
     <div><div class="lbl" style="margin-top:0;">Answered ≤30s by Day (Target 80%)</div><div class="cbox"><canvas id="c2"></canvas></div></div>
   </div>
-  <div class="note">* Wed Jul 22 (amber) is a partial day — data received so far (voice feed current to Tue 7/21, ~4a CT, email to Tue 7/21, ~1:30p ET); not comparable to the full days and excluded from the Jul 15–21 total.</div>
+  <div class="note">* Wed Jul 22 (amber) is a partial day — data received so far (voice feed current to ~3a CT, email to ~2:30a ET); not comparable to the full days and excluded from the Jul 15–21 total.</div>
 
-  <div class="sec">Email <span style="font-weight:400;color:var(--mut);font-size:12px;">· updated through Tue 7/21, ~1:30p ET</span></div>
+  <div class="sec">Email <span style="font-weight:400;color:var(--mut);font-size:12px;">· updated through ~2:30a ET</span></div>
   <div class="note" style="margin:-2px 0 8px;">Received &amp; Resolved reflect <b>patient messages only</b> — automated notifications, marketing, vendor, and system email are excluded (classified from message content).</div>
   <div class="grid kpis">
     <div class="card"><div class="k">Received</div><div class="v">17</div><div class="n">Jul 15–21</div></div>
     <div class="card"><div class="k">Resolved</div><div class="v">15</div><div class="n">Jul 15–21</div></div>
-    <div class="card"><div class="k">First Response ≤4hr</div><div class="v">67%</div><div class="n">of replied emails</div></div>
+    <div class="card"><div class="k">First Response ≤4hr</div><div class="v">50%</div><div class="n">of replied emails</div></div>
     <div class="card"><div class="k">First Response ≤24hr</div><div class="v">100%</div><div class="n">of replied emails</div></div>
   </div>
   <div class="lbl">By Day</div>
@@ -95,14 +95,14 @@
       <tr><td>Sat 7/18</td><td>2</td><td>2</td><td>0</td><td class="amb">50%</td></tr>
       <tr><td>Sun 7/19</td><td>1</td><td>1</td><td>0</td><td class="grn">100%</td></tr>
       <tr><td>Mon 7/20</td><td>3</td><td>3</td><td>0</td><td class="amb">67%</td></tr>
-      <tr><td>Tue 7/21</td><td>4</td><td>2</td><td>+2</td><td>—</td></tr>
-      <tr class="tot"><td>Jul 15–21</td><td>17</td><td>15</td><td>+2</td><td class="amb">67%</td></tr>
-      <tr class="amb"><td>Wed 7/22*</td><td>0</td><td>2</td><td>-2</td><td>—</td></tr>
+      <tr><td>Tue 7/21</td><td>4</td><td>2</td><td>+2</td><td class="red">0%</td></tr>
+      <tr class="tot"><td>Jul 15–21</td><td>17</td><td>15</td><td>+2</td><td class="amb">50%</td></tr>
+      <tr class="amb"><td>Wed 7/22*</td><td>1</td><td>3</td><td>-2</td><td>—</td></tr>
     </tbody>
   </table>
-  <div class="note">* Wed Jul 22 (amber) is partial — received/resolved so far (email feed to Tue 7/21, ~1:30p ET); excluded from the Jul 15–21 total.</div>
+  <div class="note">* Wed Jul 22 (amber) is partial — received/resolved so far (email feed to ~2:30a ET); excluded from the Jul 15–21 total.</div>
 
-  <div class="sec">Chat <span style="font-weight:400;color:var(--mut);font-size:12px;">· updated through Tue 7/21, ~4a CT</span></div>
+  <div class="sec">Chat <span style="font-weight:400;color:var(--mut);font-size:12px;">· updated through ~3a CT</span></div>
   <div class="grid kpis">
     <div class="card"><div class="k">Answered ≤30s</div><div class="v grn">0%</div><div class="n">Jul 15–21 · Target 90%</div></div>
     <div class="card"><div class="k">Inbound Volume</div><div class="v">0</div><div class="n">Jul 15–21 · ≤0/day</div></div>
@@ -115,7 +115,7 @@
       <tr class="amb"><td>Wed 7/22*</td><td>0</td><td>0%</td><td>0s</td></tr>
     </tbody>
   </table>
-  <div class="note">* Wed Jul 22 (amber) is partial — chats so far (voice/chat feed to Tue 7/21, ~4a CT); excluded from the Jul 15–21 total.</div>
+  <div class="note">* Wed Jul 22 (amber) is partial — chats so far (voice/chat feed to ~3a CT); excluded from the Jul 15–21 total.</div>
 
   <div class="sec">Intraday by Hour</div>
   <div class="picker">
@@ -153,8 +153,8 @@
   new Chart(document.getElementById('c2'),{type:'line',data:{labels:days7,datasets:[{label:'SLA %',data:[67,33,0,100,0,50,0,0],borderColor:'#2a78d6',backgroundColor:'#2a78d6',borderWidth:2,tension:0.25,pointRadius:3,pointBackgroundColor:wkBlue,pointBorderColor:wkBlue},{label:'Target 80%',data:[80,80,80,80,80,80,80,80],borderColor:'#e34948',borderWidth:1.5,borderDash:[6,4],pointRadius:0}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},scales:{x:bx,y:{min:0,max:110,grid:{color:grid},ticks:{stepSize:20,color:mut,font:{size:11},callback:function(v){return v>100?'':v+'%';}}}}}});
   var Z=function(){return [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];};
   var VOFF={'7/15':[0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,0,0,0,0,0,0,0,0],'7/16':[0,0,0,0,0,0,0,1,1,0,1,0,0,1,0,1,1,0,0,0,0,0,0,0],'7/17':[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],'7/18':[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0],'7/19':[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],'7/20':[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0],'7/21':[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],'7/22':[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]};
-  var EREC={'7/15':[0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],'7/16':[0,0,0,0,1,0,0,0,0,1,1,0,1,0,1,0,0,0,0,0,0,0,0,0],'7/17':[0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0],'7/18':[0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0],'7/19':[0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0],'7/20':[0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0],'7/21':[0,0,0,0,0,0,0,0,0,0,0,1,1,2,0,0,0,0,0,0,0,0,0,0],'7/22':[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]};
-  var ECLO={'7/15':[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],'7/16':[0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,1,1,0,0,0,0,0],'7/17':[0,0,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0],'7/18':[0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0],'7/19':[0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0],'7/20':[0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1],'7/21':[0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0],'7/22':[1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]};
+  var EREC={'7/15':[0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],'7/16':[0,0,0,0,1,0,0,0,0,1,1,0,1,0,1,0,0,0,0,0,0,0,0,0],'7/17':[0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0],'7/18':[0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0],'7/19':[0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0],'7/20':[0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0],'7/21':[0,0,0,0,0,0,0,0,0,0,0,1,1,2,0,0,0,0,0,0,0,0,0,0],'7/22':[0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]};
+  var ECLO={'7/15':[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],'7/16':[0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,1,1,0,0,0,0,0],'7/17':[0,0,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0],'7/18':[0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0],'7/19':[0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0],'7/20':[0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1],'7/21':[0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0],'7/22':[1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]};
   var hrs=[]; for(var h=0;h<24;h++){hrs.push((h%12===0?12:h%12)+(h<12?'a':'p'));}
   var sum=function(a){return a.reduce(function(x,y){return x+y;},0);};
   var xh={grid:{display:false},ticks:{color:mut,font:{size:10},maxRotation:0,autoSkip:false,callback:function(v,i){return i%3===0?hrs[i]:'';}}};

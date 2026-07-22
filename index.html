@@ -41,14 +41,14 @@
 <body>
 <div class="wrap">
   <h1>SnagRX — Patient Support Performance</h1>
-  <div class="sub">Jul 15–21, 2026 · Voice · Email · Chat · SnagRX · Central Time · <b>page rebuilt 1:19am CDT</b></div>
+  <div class="sub">Jul 15–21, 2026 · Voice · Email · Chat · SnagRX · Central Time · <b>page rebuilt 5:21am CDT</b></div>
 
   <div class="sec" style="border-color:var(--amb);">Today so far · Wed Jul 22 <span style="font-weight:400;color:var(--amb);font-size:13px;">— in progress</span></div>
   <div class="note" style="margin:-8px 0 12px;">Preliminary — feeds refresh at different rates, so each tile shows its own "as of" time.</div>
   <div class="grid kpis">
     <div class="card"><div class="k">Voice — calls</div><div class="v">0</div><div class="n">as of Tue 7/21, ~4a CT</div></div>
     <div class="card"><div class="k">Email — received</div><div class="v">0</div><div class="n">as of Tue 7/21, ~1:30p ET</div></div>
-    <div class="card"><div class="k">Email — open backlog</div><div class="v">2</div><div class="n">as of Tue 7/21, ~1:30p ET</div></div>
+    <div class="card"><div class="k">Email — open backlog</div><div class="v">0</div><div class="n">as of Tue 7/21, ~1:30p ET</div></div>
     <div class="card"><div class="k">Chat — chats</div><div class="v">0</div><div class="n">as of Tue 7/21, ~4a CT</div></div>
   </div>
 
@@ -97,7 +97,7 @@
       <tr><td>Mon 7/20</td><td>3</td><td>3</td><td>0</td><td class="amb">67%</td></tr>
       <tr><td>Tue 7/21</td><td>4</td><td>2</td><td>+2</td><td>—</td></tr>
       <tr class="tot"><td>Jul 15–21</td><td>17</td><td>15</td><td>+2</td><td class="amb">67%</td></tr>
-      <tr class="amb"><td>Wed 7/22*</td><td>0</td><td>0</td><td>+0</td><td>—</td></tr>
+      <tr class="amb"><td>Wed 7/22*</td><td>0</td><td>2</td><td>-2</td><td>—</td></tr>
     </tbody>
   </table>
   <div class="note">* Wed Jul 22 (amber) is partial — received/resolved so far (email feed to Tue 7/21, ~1:30p ET); excluded from the Jul 15–21 total.</div>
@@ -154,7 +154,7 @@
   var Z=function(){return [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];};
   var VOFF={'7/15':[0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,0,0,0,0,0,0,0,0],'7/16':[0,0,0,0,0,0,0,1,1,0,1,0,0,1,0,1,1,0,0,0,0,0,0,0],'7/17':[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],'7/18':[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0],'7/19':[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],'7/20':[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0],'7/21':[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],'7/22':[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]};
   var EREC={'7/15':[0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],'7/16':[0,0,0,0,1,0,0,0,0,1,1,0,1,0,1,0,0,0,0,0,0,0,0,0],'7/17':[0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0],'7/18':[0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0],'7/19':[0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0],'7/20':[0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0],'7/21':[0,0,0,0,0,0,0,0,0,0,0,1,1,2,0,0,0,0,0,0,0,0,0,0],'7/22':[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]};
-  var ECLO={'7/15':[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],'7/16':[0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,1,1,0,0,0,0,0],'7/17':[0,0,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0],'7/18':[0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0],'7/19':[0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0],'7/20':[0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1],'7/21':[0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0],'7/22':[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]};
+  var ECLO={'7/15':[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],'7/16':[0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,1,1,0,0,0,0,0],'7/17':[0,0,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0],'7/18':[0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0],'7/19':[0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0],'7/20':[0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1],'7/21':[0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0],'7/22':[1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]};
   var hrs=[]; for(var h=0;h<24;h++){hrs.push((h%12===0?12:h%12)+(h<12?'a':'p'));}
   var sum=function(a){return a.reduce(function(x,y){return x+y;},0);};
   var xh={grid:{display:false},ticks:{color:mut,font:{size:10},maxRotation:0,autoSkip:false,callback:function(v,i){return i%3===0?hrs[i]:'';}}};

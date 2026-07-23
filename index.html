@@ -41,43 +41,18 @@
 <body>
 <div class="wrap">
   <h1>SnagRX — Patient Support Performance</h1>
-  <div class="sub">Jul 16–22, 2026 · Voice · Email · Chat · SnagRX · Central Time · <b>page rebuilt 9:20am CDT</b></div>
+  <div class="sub">Jul 16–22, 2026 · Voice · Email · Chat · SnagRX · Central Time · <b>page rebuilt 9:56am CDT</b></div>
 
   <div class="sec" style="border-color:var(--amb);">Today so far · Thu Jul 23 <span style="font-weight:400;color:var(--amb);font-size:13px;">— in progress</span></div>
   <div class="note" style="margin:-8px 0 12px;">Preliminary — feeds refresh at different rates, so each tile shows its own "as of" time.</div>
   <div class="grid kpis">
-    <div class="card"><div class="k">Voice — calls</div><div class="v">0</div><div class="n">as of ~5:30a CT</div></div>
+    <div class="card"><div class="k">Voice — calls</div><div class="v">—</div><div class="n">as of ~5:30a CT</div></div>
     <div class="card"><div class="k">Email — received</div><div class="v">0</div><div class="n">as of Wed 7/22, ~10a ET</div></div>
     <div class="card"><div class="k">Email — open backlog</div><div class="v">1</div><div class="n">as of Wed 7/22, ~10a ET</div></div>
     <div class="card"><div class="k">Chat — chats</div><div class="v">0</div><div class="n">as of ~5:30a CT</div></div>
   </div>
 
-  <div class="sec">Voice <span style="font-weight:400;color:var(--mut);font-size:12px;">· updated through ~5:30a CT</span></div>
-  <div class="grid kpis">
-    <div class="card"><div class="k">Answered ≤30s</div><div class="v red">59%</div><div class="n red">Target 80%</div></div>
-    <div class="card"><div class="k">Abandonment</div><div class="v red">29%</div><div class="n red">Target &lt;5%</div></div>
-    <div class="card"><div class="k">Avg Speed of Answer</div><div class="v red">133s</div><div class="n red">Target ≤30s · Jul 16–22 avg</div></div>
-    <div class="card"><div class="k">Inbound Volume</div><div class="v">49</div><div class="n">Jul 16–22</div></div>
-  </div>
-  <div class="lbl">By Day</div>
-  <table>
-    <thead><tr><th>Day</th><th>Inbound Volume</th><th>Answered</th><th>% Answered ≤30s</th><th>Avg Speed of Answer</th><th>Abandonment</th></tr></thead>
-    <tbody>
-      <tr><td>Thu 7/16</td><td>17</td><td>12</td><td class="amb">53%</td><td class="red">240s</td><td class="red">29.4%</td></tr>
-      <tr><td>Fri 7/17</td><td>9</td><td>7</td><td class="amb">67%</td><td class="red">200s</td><td class="red">22.2%</td></tr>
-      <tr><td>Sat 7/18</td><td>8</td><td>7</td><td class="grn">88%</td><td>8s</td><td class="amb">12.5%</td></tr>
-      <tr><td>Sun 7/19</td><td>5</td><td>5</td><td class="grn">80%</td><td>16s</td><td>0.0%</td></tr>
-      <tr><td>Mon 7/20</td><td>7</td><td>3</td><td class="red">29%</td><td>72s</td><td class="red">57.1%</td></tr>
-      <tr><td>Tue 7/21</td><td>3</td><td>1</td><td class="red">33%</td><td>10s</td><td class="red">66.7%</td></tr>
-      <tr class="tot"><td>Jul 16–22</td><td>49</td><td>35</td><td class="amb">59%</td><td class="red">133s</td><td class="red">29%</td></tr>
-      <tr class="amb"><td>Thu 7/23*</td><td>0</td><td>0</td><td>0%</td><td>0s</td><td>0%</td></tr>
-    </tbody>
-  </table>
-  <div class="grid charts" style="margin-top:20px;">
-    <div><div class="lbl" style="margin-top:0;">Inbound Volume by Day</div><div class="cbox"><canvas id="c1"></canvas></div></div>
-    <div><div class="lbl" style="margin-top:0;">Answered ≤30s by Day (Target 80%)</div><div class="cbox"><canvas id="c2"></canvas></div></div>
-  </div>
-  <div class="note">* Thu Jul 23 (amber) is a partial day — data received so far (voice feed current to ~5:30a CT, email to Wed 7/22, ~10a ET); not comparable to the full days and excluded from the Jul 16–22 total.</div>
+  <div class="sec">Voice <span style="font-weight:400;color:var(--mut);font-size:12px;">&middot; feed delayed</span></div><div class="note" style="background:#fff7e6;border:1px solid #f0c36d;border-radius:8px;padding:12px 14px;color:#7a5b00;margin-top:0;">&#9203; <b>Voice data is temporarily delayed</b> &mdash; our call-center feed is catching up and this section refreshes automatically. Email metrics below are current.</div><canvas id="c1" style="display:none"></canvas><canvas id="c2" style="display:none"></canvas>
 
   <div class="sec">Email <span style="font-weight:400;color:var(--mut);font-size:12px;">· updated through Wed 7/22, ~10a ET</span></div>
   <div class="note" style="margin:-2px 0 8px;">Received &amp; Resolved reflect <b>patient messages only</b> — automated notifications, marketing, vendor, and system email are excluded (classified from message content).</div>

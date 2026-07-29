@@ -41,7 +41,7 @@
 <body>
 <div class="wrap">
   <h1>SnagRX — Patient Support Performance</h1>
-  <div class="sub">Jul 22–28, 2026 · Voice · Email · SnagRX · Central Time · <b>page rebuilt 1:26pm CDT</b></div>
+  <div class="sub">Jul 22–28, 2026 · Voice · Email · SnagRX · Central Time · <b>page rebuilt 5:36pm CDT</b></div>
   
   <div id="pane-sum">
 
@@ -49,8 +49,8 @@
   <div class="note" style="margin:-8px 0 12px;">Preliminary — feeds refresh at different rates, so each tile shows its own "as of" time.</div>
   <div class="grid kpis">
     <div class="card"><div class="k">Voice — calls</div><div class="v">2</div><div class="n">as of ~7:30a CT</div></div>
-    <div class="card"><div class="k">Email — received</div><div class="v">1</div><div class="n">as of ~6a ET</div></div>
-    <div class="card"><div class="k">Email — open backlog</div><div class="v">7</div><div class="n">as of ~6a ET</div></div>
+    <div class="card"><div class="k">Email — received</div><div class="v">3</div><div class="n">as of ~1:30p ET</div></div>
+    <div class="card"><div class="k">Email — open backlog</div><div class="v">9</div><div class="n">as of ~1:30p ET</div></div>
     
   </div>
 
@@ -78,9 +78,9 @@
     <div><div class="lbl" style="margin-top:0;">Inbound Volume by Day</div><div class="cbox"><canvas id="c1"></canvas></div></div>
     <div><div class="lbl" style="margin-top:0;">Answered ≤30s by Day (Target 80%)</div><div class="cbox"><canvas id="c2"></canvas></div></div>
   </div>
-  <div class="note">* Wed Jul 29 (amber) is a partial day — data received so far (voice feed current to ~7:30a CT, email to ~6a ET); not comparable to the full days and excluded from the Jul 22–28 total.</div>
+  <div class="note">* Wed Jul 29 (amber) is a partial day — data received so far (voice feed current to ~7:30a CT, email to ~1:30p ET); not comparable to the full days and excluded from the Jul 22–28 total.</div>
 
-  <div class="sec">Email <span style="font-weight:400;color:var(--mut);font-size:12px;">· updated through ~6a ET</span></div>
+  <div class="sec">Email <span style="font-weight:400;color:var(--mut);font-size:12px;">· updated through ~1:30p ET</span></div>
   <div class="note" style="margin:-2px 0 8px;">Received &amp; Resolved reflect <b>patient messages only</b> — automated notifications, marketing, vendor, and system email are excluded (classified from message content).</div>
   <div class="grid kpis">
     <div class="card"><div class="k">Received</div><div class="v">18</div><div class="n">Jul 22–28</div></div>
@@ -100,10 +100,10 @@
       <tr><td>Mon 7/27</td><td>6</td><td>1</td><td>+5</td><td class="red">0%</td></tr>
       <tr><td>Tue 7/28</td><td>7</td><td>2</td><td>+5</td><td class="red">0%</td></tr>
       <tr class="tot"><td>Jul 22–28</td><td>18</td><td>11</td><td>+7</td><td class="red">11%</td></tr>
-      <tr class="amb"><td>Wed 7/29*</td><td>1</td><td>4</td><td>-3</td><td>—</td></tr>
+      <tr class="amb"><td>Wed 7/29*</td><td>3</td><td>4</td><td>-1</td><td>—</td></tr>
     </tbody>
   </table>
-  <div class="note">* Wed Jul 29 (amber) is partial — received/resolved so far (email feed to ~6a ET); excluded from the Jul 22–28 total.</div>
+  <div class="note">* Wed Jul 29 (amber) is partial — received/resolved so far (email feed to ~1:30p ET); excluded from the Jul 22–28 total.</div>
 
   
 
@@ -145,7 +145,7 @@
   new Chart(document.getElementById('c2'),{type:'line',data:{labels:days7,datasets:[{label:'SLA %',data:[0,100,100,0,0,0,0,0],borderColor:'#2a78d6',backgroundColor:'#2a78d6',borderWidth:2,tension:0.25,pointRadius:3,pointBackgroundColor:wkBlue,pointBorderColor:wkBlue},{label:'Target 80%',data:[80,80,80,80,80,80,80,80],borderColor:'#e34948',borderWidth:1.5,borderDash:[6,4],pointRadius:0}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},scales:{x:bx,y:{min:0,max:110,grid:{color:grid},ticks:{stepSize:20,color:mut,font:{size:11},callback:function(v){return v>100?'':v+'%';}}}}}});
   var Z=function(){return [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];};
   var VOFF={'7/22':[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],'7/23':[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0],'7/24':[0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0],'7/25':[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],'7/26':[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],'7/27':[0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0],'7/28':[0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],'7/29':[0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]};
-  var EREC={'7/22':[0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0],'7/23':[0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],'7/24':[0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0],'7/25':[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0],'7/26':[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],'7/27':[0,0,0,0,0,0,0,1,0,0,0,0,0,3,0,1,0,1,0,0,0,0,0,0],'7/28':[1,0,0,0,0,0,0,0,0,0,0,2,1,2,0,0,0,0,0,0,1,0,0,0],'7/29':[0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]};
+  var EREC={'7/22':[0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0],'7/23':[0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],'7/24':[0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0],'7/25':[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0],'7/26':[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],'7/27':[0,0,0,0,0,0,0,1,0,0,0,0,0,3,0,1,0,1,0,0,0,0,0,0],'7/28':[1,0,0,0,0,0,0,0,0,0,0,2,1,2,0,0,0,0,0,0,1,0,0,0],'7/29':[0,0,0,0,0,0,1,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0]};
   var ECLO={'7/22':[1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],'7/23':[0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0],'7/24':[0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0],'7/25':[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],'7/26':[0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],'7/27':[0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0],'7/28':[0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],'7/29':[0,1,0,0,1,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]};
   var hrs=[]; for(var h=0;h<24;h++){hrs.push((h%12===0?12:h%12)+(h<12?'a':'p'));}
   var sum=function(a){return a.reduce(function(x,y){return x+y;},0);};

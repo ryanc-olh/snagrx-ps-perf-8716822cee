@@ -41,20 +41,20 @@
 <body>
 <div class="wrap">
   <h1>SnagRX — Patient Support Performance</h1>
-  <div class="sub">Jul 27–Aug 2, 2026 · Voice · Email · SnagRX · Central Time · <b>page rebuilt 1:22am CDT</b></div>
+  <div class="sub">Jul 27–Aug 2, 2026 · Voice · Email · SnagRX · Central Time · <b>page rebuilt 11:47am CDT</b></div>
   
   <div id="pane-sum">
 
   <div class="sec" style="border-color:var(--amb);">Today so far · Mon Aug 03 <span style="font-weight:400;color:var(--amb);font-size:13px;">— in progress</span></div>
   <div class="note" style="margin:-8px 0 12px;">Preliminary — feeds refresh at different rates, so each tile shows its own "as of" time.</div>
   <div class="grid kpis">
-    <div class="card"><div class="k">Voice — calls</div><div class="v">0</div><div class="n">as of Sun 8/2, ~8:30p CT</div></div>
-    <div class="card"><div class="k">Email — received</div><div class="v">0</div><div class="n">as of Sun 8/2, ~6a ET</div></div>
-    <div class="card"><div class="k">Email — open backlog</div><div class="v">4</div><div class="n">as of Sun 8/2, ~6a ET</div></div>
+    <div class="card"><div class="k">Voice — calls</div><div class="v">0</div><div class="n">as of ~9a CT</div></div>
+    <div class="card"><div class="k">Email — received</div><div class="v">0</div><div class="n">as of ~9a ET</div></div>
+    <div class="card"><div class="k">Email — open backlog</div><div class="v">4</div><div class="n">as of ~9a ET</div></div>
     
   </div>
 
-  <div class="sec">Voice <span style="font-weight:400;color:var(--mut);font-size:12px;">· updated through Sun 8/2, ~8:30p CT</span></div>
+  <div class="sec">Voice <span style="font-weight:400;color:var(--mut);font-size:12px;">· updated through ~9a CT</span></div>
   
   <div class="grid kpis">
     <div class="card"><div class="k">Answered ≤30s</div><div class="v red">12%</div><div class="n">Target 80%</div></div>
@@ -79,9 +79,9 @@
     <div><div class="lbl" style="margin-top:0;">Inbound Volume by Day</div><div class="cbox"><canvas id="c1"></canvas></div></div>
     <div><div class="lbl" style="margin-top:0;">Answered ≤30s by Day (Target 80%)</div><div class="cbox"><canvas id="c2"></canvas></div></div>
   </div>
-  <div class="note">* Mon Aug 03 (amber) is a partial day — data received so far (voice feed current to Sun 8/2, ~8:30p CT, email to Sun 8/2, ~6a ET); not comparable to the full days and excluded from the Jul 27–Aug 2 total.</div>
+  <div class="note">* Mon Aug 03 (amber) is a partial day — data received so far (voice feed current to ~9a CT, email to ~9a ET); not comparable to the full days and excluded from the Jul 27–Aug 2 total.</div>
 
-  <div class="sec">Email <span style="font-weight:400;color:var(--mut);font-size:12px;">· updated through Sun 8/2, ~6a ET</span></div>
+  <div class="sec">Email <span style="font-weight:400;color:var(--mut);font-size:12px;">· updated through ~9a ET</span></div>
   <div class="note" style="margin:-2px 0 8px;">Received &amp; Resolved reflect <b>patient messages only</b> — automated notifications, marketing, vendor, and system email are excluded (classified from message content).</div>
   <div class="grid kpis">
     <div class="card"><div class="k">Received</div><div class="v">22</div><div class="n">Jul 27–Aug 2</div></div>
@@ -101,10 +101,10 @@
       <tr><td>Sat 8/1</td><td>3</td><td>2</td><td>+1</td><td>—</td></tr>
       <tr><td>Sun 8/2</td><td>1</td><td>0</td><td>+1</td><td>—</td></tr>
       <tr class="tot"><td>Jul 27–Aug 2</td><td>22</td><td>18</td><td>+4</td><td class="red">11%</td></tr>
-      <tr class="amb"><td>Mon 8/3*</td><td>0</td><td>0</td><td>+0</td><td>—</td></tr>
+      <tr class="amb"><td>Mon 8/3*</td><td>0</td><td>1</td><td>-1</td><td>—</td></tr>
     </tbody>
   </table>
-  <div class="note">* Mon Aug 03 (amber) is partial — received/resolved so far (email feed to Sun 8/2, ~6a ET); excluded from the Jul 27–Aug 2 total.</div>
+  <div class="note">* Mon Aug 03 (amber) is partial — received/resolved so far (email feed to ~9a ET); excluded from the Jul 27–Aug 2 total.</div>
 
   
 
@@ -149,7 +149,7 @@
   var Z=function(){return [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];};
   var VOFF={'7/27':[0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0],'7/28':[0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],'7/29':[0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],'7/30':[0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],'7/31':[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],'8/1':[0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],'8/2':[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],'8/3':[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]};
   var EREC={'7/27':[0,0,0,0,0,0,0,1,0,0,0,0,0,3,0,1,0,1,0,0,0,0,0,0],'7/28':[1,0,0,0,0,0,0,0,0,0,0,2,1,2,0,0,0,0,0,0,1,0,0,0],'7/29':[0,0,0,0,0,0,1,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0],'7/30':[0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0],'7/31':[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],'8/1':[1,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],'8/2':[0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],'8/3':[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]};
-  var ECLO={'7/27':[0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0],'7/28':[0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],'7/29':[0,1,0,0,1,0,2,0,0,0,0,0,0,0,0,0,0,0,1,0,2,1,1,0],'7/30':[0,0,0,1,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],'7/31':[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0],'8/1':[0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0],'8/2':[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],'8/3':[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]};
+  var ECLO={'7/27':[0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0],'7/28':[0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],'7/29':[0,1,0,0,1,0,2,0,0,0,0,0,0,0,0,0,0,0,1,0,2,1,1,0],'7/30':[0,0,0,1,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],'7/31':[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0],'8/1':[0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0],'8/2':[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],'8/3':[0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]};
   var hrs=[]; for(var h=0;h<24;h++){hrs.push((h%12===0?12:h%12)+(h<12?'a':'p'));}
   var sum=function(a){return a.reduce(function(x,y){return x+y;},0);};
   var xh={grid:{display:false},ticks:{color:mut,font:{size:10},maxRotation:0,autoSkip:false,callback:function(v,i){return i%3===0?hrs[i]:'';}}};

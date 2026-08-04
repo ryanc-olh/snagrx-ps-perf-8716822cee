@@ -41,20 +41,20 @@
 <body>
 <div class="wrap">
   <h1>SnagRX — Patient Support Performance</h1>
-  <div class="sub">Jul 28–Aug 3, 2026 · Voice · Email · SnagRX · Central Time · <b>page rebuilt 1:19pm CDT</b></div>
+  <div class="sub">Jul 28–Aug 3, 2026 · Voice · Email · SnagRX · Central Time · <b>page rebuilt 5:22pm CDT</b></div>
   
   <div id="pane-sum">
 
   <div class="sec" style="border-color:var(--amb);">Today so far · Tue Aug 04 <span style="font-weight:400;color:var(--amb);font-size:13px;">— in progress</span></div>
   <div class="note" style="margin:-8px 0 12px;">Preliminary — feeds refresh at different rates, so each tile shows its own "as of" time.</div>
   <div class="grid kpis">
-    <div class="card"><div class="k">Voice — calls</div><div class="v">0</div><div class="n">as of Mon 8/3, ~8:30p CT</div></div>
+    <div class="card"><div class="k">Voice — calls</div><div class="v">1</div><div class="n">as of ~12p CT</div></div>
     <div class="card"><div class="k">Email — received</div><div class="v">2</div><div class="n">as of ~10a ET</div></div>
     <div class="card"><div class="k">Email — open backlog</div><div class="v">3</div><div class="n">as of ~10a ET</div></div>
     
   </div>
 
-  <div class="sec">Voice <span style="font-weight:400;color:var(--mut);font-size:12px;">· updated through Mon 8/3, ~8:30p CT</span></div>
+  <div class="sec">Voice <span style="font-weight:400;color:var(--mut);font-size:12px;">· updated through ~12p CT</span></div>
   
   <div class="grid kpis">
     <div class="card"><div class="k">Answered ≤30s</div><div class="v red">10%</div><div class="n">Target 80%</div></div>
@@ -72,14 +72,14 @@
       <tr><td>Sat 8/1</td><td>1</td><td>1</td><td class="grn">100%</td><td>7s</td><td>0.0%</td></tr>
       <tr><td>Mon 8/3</td><td>3</td><td>0</td><td class="red">0%</td><td>0s</td><td class="red">100.0%</td></tr>
       <tr class="tot"><td>Jul 28–Aug 3</td><td>10</td><td>3</td><td class="red">10%</td><td class="red">346s</td><td class="red">70%</td></tr>
-      <tr class="amb"><td>Tue 8/4*</td><td>0</td><td>0</td><td>0%</td><td>0s</td><td>0%</td></tr>
+      <tr class="amb"><td>Tue 8/4*</td><td>1</td><td>0</td><td>0%</td><td>0s</td><td>100.0%</td></tr>
     </tbody>
   </table>
   <div class="grid charts" style="margin-top:20px;">
     <div><div class="lbl" style="margin-top:0;">Inbound Volume by Day</div><div class="cbox"><canvas id="c1"></canvas></div></div>
     <div><div class="lbl" style="margin-top:0;">Answered ≤30s by Day (Target 80%)</div><div class="cbox"><canvas id="c2"></canvas></div></div>
   </div>
-  <div class="note">* Tue Aug 04 (amber) is a partial day — data received so far (voice feed current to Mon 8/3, ~8:30p CT, email to ~10a ET); not comparable to the full days and excluded from the Jul 28–Aug 3 total.</div>
+  <div class="note">* Tue Aug 04 (amber) is a partial day — data received so far (voice feed current to ~12p CT, email to ~10a ET); not comparable to the full days and excluded from the Jul 28–Aug 3 total.</div>
 
   <div class="sec">Email <span style="font-weight:400;color:var(--mut);font-size:12px;">· updated through ~10a ET</span></div>
   <div class="note" style="margin:-2px 0 8px;">Received &amp; Resolved reflect <b>patient messages only</b> — automated notifications, marketing, vendor, and system email are excluded (classified from message content).</div>
@@ -144,10 +144,10 @@
   var bx={grid:{display:false},ticks:{color:mut,font:{size:11}}};
   var days7=['Tue 28','Wed 29','Thu 30','Fri 31','Sat 1','Sun 2','Mon 3','Tue 4*'];
   var wkBlue=['#2a78d6','#2a78d6','#2a78d6','#2a78d6','#2a78d6','#2a78d6','#2a78d6','#9a6a00'];
-  new Chart(document.getElementById('c1'),{type:'bar',data:{labels:days7,datasets:[{label:'Inbound volume',data:[2,2,2,0,1,0,3,0],backgroundColor:wkBlue,borderRadius:4,maxBarThickness:22}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},scales:{x:bx,y:{grid:{color:grid},ticks:{color:mut,font:{size:11}}}}}});
+  new Chart(document.getElementById('c1'),{type:'bar',data:{labels:days7,datasets:[{label:'Inbound volume',data:[2,2,2,0,1,0,3,1],backgroundColor:wkBlue,borderRadius:4,maxBarThickness:22}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},scales:{x:bx,y:{grid:{color:grid},ticks:{color:mut,font:{size:11}}}}}});
   new Chart(document.getElementById('c2'),{type:'line',data:{labels:days7,datasets:[{label:'SLA %',data:[0,0,0,0,100,0,0,0],borderColor:'#2a78d6',backgroundColor:'#2a78d6',borderWidth:2,tension:0.25,pointRadius:3,pointBackgroundColor:wkBlue,pointBorderColor:wkBlue},{label:'Target 80%',data:[80,80,80,80,80,80,80,80],borderColor:'#e34948',borderWidth:1.5,borderDash:[6,4],pointRadius:0}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},scales:{x:bx,y:{min:0,max:110,grid:{color:grid},ticks:{stepSize:20,color:mut,font:{size:11},callback:function(v){return v>100?'':v+'%';}}}}}});
   var Z=function(){return [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];};
-  var VOFF={'7/28':[0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],'7/29':[0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],'7/30':[0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],'7/31':[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],'8/1':[0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],'8/2':[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],'8/3':[0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0,1,0,0,0],'8/4':[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]};
+  var VOFF={'7/28':[0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],'7/29':[0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],'7/30':[0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],'7/31':[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],'8/1':[0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],'8/2':[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],'8/3':[0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0,1,0,0,0],'8/4':[0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0]};
   var EREC={'7/28':[1,0,0,0,0,0,0,0,0,0,0,2,1,2,0,0,0,0,0,0,1,0,0,0],'7/29':[0,0,0,0,0,0,1,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0],'7/30':[0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0],'7/31':[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],'8/1':[1,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],'8/2':[0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],'8/3':[0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],'8/4':[0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0]};
   var ECLO={'7/28':[0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],'7/29':[0,1,0,0,1,0,2,0,0,0,0,0,0,0,0,0,0,0,1,0,2,1,1,0],'7/30':[0,0,0,1,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],'7/31':[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0],'8/1':[0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0],'8/2':[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],'8/3':[0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0],'8/4':[0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]};
   var hrs=[]; for(var h=0;h<24;h++){hrs.push((h%12===0?12:h%12)+(h<12?'a':'p'));}

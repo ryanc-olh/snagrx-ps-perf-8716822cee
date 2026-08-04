@@ -41,7 +41,7 @@
 <body>
 <div class="wrap">
   <h1>SnagRX — Patient Support Performance</h1>
-  <div class="sub">Jul 28–Aug 3, 2026 · Voice · Email · SnagRX · Central Time · <b>page rebuilt 5:21am CDT</b></div>
+  <div class="sub">Jul 28–Aug 3, 2026 · Voice · Email · SnagRX · Central Time · <b>page rebuilt 9:25am CDT</b></div>
   
   <div id="pane-sum">
 
@@ -50,7 +50,7 @@
   <div class="grid kpis">
     <div class="card"><div class="k">Voice — calls</div><div class="v">0</div><div class="n">as of Mon 8/3, ~8:30p CT</div></div>
     <div class="card"><div class="k">Email — received</div><div class="v">0</div><div class="n">as of Mon 8/3, ~9a ET</div></div>
-    <div class="card"><div class="k">Email — open backlog</div><div class="v">3</div><div class="n">as of Mon 8/3, ~9a ET</div></div>
+    <div class="card"><div class="k">Email — open backlog</div><div class="v">1</div><div class="n">as of Mon 8/3, ~9a ET</div></div>
     
   </div>
 
@@ -86,8 +86,8 @@
   <div class="grid kpis">
     <div class="card"><div class="k">Received</div><div class="v">17</div><div class="n">Jul 28–Aug 3</div></div>
     <div class="card"><div class="k">Resolved</div><div class="v">19</div><div class="n">Jul 28–Aug 3</div></div>
-    <div class="card"><div class="k">First Response ≤4hr</div><div class="v red">25%</div><div class="n">of replied emails</div></div>
-    <div class="card"><div class="k">First Response ≤24hr</div><div class="v grn">75%</div><div class="n">of replied emails</div></div>
+    <div class="card"><div class="k">First Response ≤4hr</div><div class="v red">20%</div><div class="n">of replied emails</div></div>
+    <div class="card"><div class="k">First Response ≤24hr</div><div class="v amb">60%</div><div class="n">of replied emails</div></div>
   </div>
   <div class="lbl">By Day</div>
   <table>
@@ -97,11 +97,11 @@
       <tr><td>Wed 7/29</td><td>3</td><td>9</td><td class="grn">-6</td><td class="amb">50%</td></tr>
       <tr><td>Thu 7/30</td><td>2</td><td>3</td><td class="grn">-1</td><td>—</td></tr>
       <tr><td>Fri 7/31</td><td>0</td><td>1</td><td class="grn">-1</td><td>—</td></tr>
-      <tr><td>Sat 8/1</td><td>3</td><td>2</td><td>+1</td><td>—</td></tr>
+      <tr><td>Sat 8/1</td><td>3</td><td>2</td><td>+1</td><td class="red">0%</td></tr>
       <tr><td>Sun 8/2</td><td>1</td><td>0</td><td>+1</td><td>—</td></tr>
       <tr><td>Mon 8/3</td><td>1</td><td>2</td><td class="grn">-1</td><td class="red">0%</td></tr>
-      <tr class="tot"><td>Jul 28–Aug 3</td><td>17</td><td>19</td><td>-2</td><td class="red">25%</td></tr>
-      <tr class="amb"><td>Tue 8/4*</td><td>0</td><td>0</td><td>+0</td><td>—</td></tr>
+      <tr class="tot"><td>Jul 28–Aug 3</td><td>17</td><td>19</td><td>-2</td><td class="red">20%</td></tr>
+      <tr class="amb"><td>Tue 8/4*</td><td>0</td><td>2</td><td>-2</td><td>—</td></tr>
     </tbody>
   </table>
   <div class="note">* Tue Aug 04 (amber) is partial — received/resolved so far (email feed to Mon 8/3, ~9a ET); excluded from the Jul 28–Aug 3 total.</div>
@@ -149,7 +149,7 @@
   var Z=function(){return [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];};
   var VOFF={'7/28':[0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],'7/29':[0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],'7/30':[0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],'7/31':[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],'8/1':[0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],'8/2':[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],'8/3':[0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0,1,0,0,0],'8/4':[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]};
   var EREC={'7/28':[1,0,0,0,0,0,0,0,0,0,0,2,1,2,0,0,0,0,0,0,1,0,0,0],'7/29':[0,0,0,0,0,0,1,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0],'7/30':[0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0],'7/31':[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],'8/1':[1,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],'8/2':[0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],'8/3':[0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],'8/4':[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]};
-  var ECLO={'7/28':[0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],'7/29':[0,1,0,0,1,0,2,0,0,0,0,0,0,0,0,0,0,0,1,0,2,1,1,0],'7/30':[0,0,0,1,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],'7/31':[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0],'8/1':[0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0],'8/2':[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],'8/3':[0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0],'8/4':[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]};
+  var ECLO={'7/28':[0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],'7/29':[0,1,0,0,1,0,2,0,0,0,0,0,0,0,0,0,0,0,1,0,2,1,1,0],'7/30':[0,0,0,1,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],'7/31':[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0],'8/1':[0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0],'8/2':[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],'8/3':[0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0],'8/4':[0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]};
   var hrs=[]; for(var h=0;h<24;h++){hrs.push((h%12===0?12:h%12)+(h<12?'a':'p'));}
   var sum=function(a){return a.reduce(function(x,y){return x+y;},0);};
   var xh={grid:{display:false},ticks:{color:mut,font:{size:10},maxRotation:0,autoSkip:false,callback:function(v,i){return i%3===0?hrs[i]:'';}}};

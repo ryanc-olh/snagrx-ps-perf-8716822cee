@@ -47,7 +47,7 @@
 <body>
 <div class="wrap">
   <h1>SnagRX — Patient Support Performance</h1>
-  <div class="sub">Aug 5–11, 2026 · Voice · Email · SnagRX · Central Time · <b>page rebuilt 10:08am CDT</b></div>
+  <div class="sub">Aug 5–11, 2026 · Voice · Email · SnagRX · Central Time · <b>page rebuilt 1:40pm CDT</b></div>
   
   <div id="pane-sum">
 
@@ -55,8 +55,8 @@
   <div class="note" style="margin:-8px 0 12px;">Preliminary — feeds refresh at different rates, so each tile shows its own "as of" time.</div>
   <div class="grid kpis">
     <div class="card"><div class="k">Voice — calls</div><div class="v">0</div><div class="n">as of Tue 8/11, ~6:30p CT</div></div>
-    <div class="card"><div class="k">Email — received</div><div class="v">3</div><div class="n">as of ~6:30a ET</div></div>
-    <div class="card"><div class="k">Email — open backlog</div><div class="v">63</div><div class="n">as of ~6:30a ET</div></div>
+    <div class="card"><div class="k">Email — received</div><div class="v">9</div><div class="n">as of ~6:30a ET</div></div>
+    <div class="card"><div class="k">Email — open backlog</div><div class="v">69</div><div class="n">as of ~6:30a ET</div></div>
     
   </div>
 
@@ -109,7 +109,7 @@
       <tr><td>Mon 8/10</td><td>13</td><td>1</td><td>+12</td><td>—</td></tr>
       <tr><td>Tue 8/11</td><td>15</td><td>3</td><td>+12</td><td class="grn">80%</td></tr>
       <tr class="tot"><td>Aug 5–11</td><td>77</td><td>19</td><td>+58</td><td class="amb">53%</td></tr>
-      <tr class="amb"><td>Wed 8/12*</td><td>3</td><td>3</td><td>+0</td><td>—</td></tr>
+      <tr class="amb"><td>Wed 8/12*</td><td>9</td><td>3</td><td>+6</td><td>—</td></tr>
     </tbody>
   </table>
   <div class="note">* Wed Aug 12 (amber) is partial — received/resolved so far (email feed to ~6:30a ET); excluded from the Aug 5–11 total.</div>
@@ -177,7 +177,7 @@
   new Chart(document.getElementById('c2'),{type:'line',data:{labels:days7,datasets:[{label:'SLA %',data:[20,0,15,44,75,50,67,0],borderColor:'#2a78d6',backgroundColor:'#2a78d6',borderWidth:2,tension:0.25,pointRadius:3,pointBackgroundColor:wkBlue,pointBorderColor:wkBlue},{label:'Target 80%',data:[80,80,80,80,80,80,80,80],borderColor:'#e34948',borderWidth:1.5,borderDash:[6,4],pointRadius:0}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},scales:{x:bx,y:{min:0,max:110,grid:{color:grid},ticks:{stepSize:20,color:mut,font:{size:11},callback:function(v){return v>100?'':v+'%';}}}}}});
   var Z=function(){return [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];};
   var VOFF={'8/5':[1,0,0,0,0,1,0,0,0,1,0,0,0,1,0,0,1,0,0,1,1,0,0,0],'8/6':[0,0,0,0,0,0,0,1,0,2,2,2,1,0,1,2,1,0,1,0,0,0,0,0],'8/7':[0,0,0,0,0,0,0,0,3,1,3,0,2,1,1,1,1,5,4,3,0,1,0,0],'8/8':[0,1,0,0,0,0,0,0,0,1,0,1,2,3,0,0,1,0,0,0,0,0,0,0],'8/9':[0,0,0,0,0,0,0,1,0,0,2,0,0,0,0,1,0,0,0,0,0,0,0,0],'8/10':[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0],'8/11':[0,0,0,0,0,0,0,0,0,0,2,1,1,0,1,0,0,0,1,0,0,0,0,0],'8/12':[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]};
-  var EREC={'8/5':[0,0,0,0,0,0,0,0,1,0,2,0,0,0,0,0,0,1,0,0,1,0,0,0],'8/6':[0,0,0,0,0,0,0,0,0,0,0,1,2,0,1,0,1,0,0,1,0,0,0,0],'8/7':[0,0,0,0,1,2,0,0,1,1,0,1,3,2,1,1,1,0,0,1,0,2,0,1],'8/8':[0,0,0,0,0,0,0,1,1,0,1,0,0,0,0,0,0,2,0,1,1,1,0,0],'8/9':[0,0,0,0,0,1,0,3,1,2,0,1,0,0,1,0,0,0,1,0,0,0,2,0],'8/10':[0,0,0,0,1,1,0,2,0,2,0,2,0,0,2,1,0,1,0,0,0,1,0,0],'8/11':[0,0,0,1,0,2,3,2,0,0,3,1,0,1,0,1,0,0,0,0,0,0,0,1],'8/12':[0,0,0,0,0,0,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]};
+  var EREC={'8/5':[0,0,0,0,0,0,0,0,1,0,2,0,0,0,0,0,0,1,0,0,1,0,0,0],'8/6':[0,0,0,0,0,0,0,0,0,0,0,1,2,0,1,0,1,0,0,1,0,0,0,0],'8/7':[0,0,0,0,1,2,0,0,1,1,0,1,3,2,1,1,1,0,0,1,0,2,0,1],'8/8':[0,0,0,0,0,0,0,1,1,0,1,0,0,0,0,0,0,2,0,1,1,1,0,0],'8/9':[0,0,0,0,0,1,0,3,1,2,0,1,0,0,1,0,0,0,1,0,0,0,2,0],'8/10':[0,0,0,0,1,1,0,2,0,2,0,2,0,0,2,1,0,1,0,0,0,1,0,0],'8/11':[0,0,0,1,0,2,3,2,0,0,3,1,0,1,0,1,0,0,0,0,0,0,0,1],'8/12':[0,0,0,0,0,0,3,0,2,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0]};
   var ECLO={'8/5':[0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,2,0,1],'8/6':[0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0],'8/7':[0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0],'8/8':[0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],'8/9':[0,0,0,0,0,2,0,1,0,0,1,0,1,1,0,0,0,0,0,0,0,0,0,0],'8/10':[0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],'8/11':[0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,1],'8/12':[0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]};
   var hrs=[]; for(var h=0;h<24;h++){hrs.push((h%12===0?12:h%12)+(h<12?'a':'p'));}
   var sum=function(a){return a.reduce(function(x,y){return x+y;},0);};

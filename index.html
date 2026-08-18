@@ -50,7 +50,7 @@
 <body>
 <div class="wrap">
   <h1>SnagRX — Patient Support Performance</h1>
-  <div class="sub">Aug 11–17, 2026 · Voice · Email · SnagRX · Central Time · <b id="hdrStamp">updated 5:21pm CDT</b></div>
+  <div class="sub">Aug 11–17, 2026 · Voice · Email · SnagRX · Central Time · <b id="hdrStamp">updated 5:26pm CDT</b></div>
   
   <div id="pane-sum">
 
@@ -338,7 +338,7 @@
         txt('kcSL',(cSL==null?'—':cSL+'%'));
         txt('kcASA',asa(ct.asa_s));
         var eCS=document.getElementById('kcSL');
-        if(eCS&&cSL!=null) eCS.className='v '+(cSL>=90?'grn':(cSL>=60?'amb':'red'));
+        if(eCS&&cSL!=null) eCS.className='v '+(cSL>=80?'grn':(cSL>=50?'amb':'red'));
         var crow=document.getElementById('cTodayRow');
         if(crow&&crow.children.length>=4){
           crow.children[1].textContent=comma(cOff);
